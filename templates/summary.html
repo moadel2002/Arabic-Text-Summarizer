@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summarization Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 800px;
+            text-align: left;
+            display: flex;
+            position: absolute;
+            top: 0;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .text-section {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin: 0 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Summarization Result</h1>
+        <div class="text-section">
+            <label for="original-text">Original Text:</label>
+            <p dir="rtl" id="original-text">
+                {{data.text}}
+            </p>
+        </div>
+
+        <div class="text-section">
+            <label for="summarized-text">Summarized Text:</label>
+            <p dir="rtl" id="summarized-text">
+                {{data.summary}}
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
